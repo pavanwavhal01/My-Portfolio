@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavan Portfolio Website</title>
+
+  <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Pavan Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+  </header>
+
+  <!-- home section design -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's me</h3>
+      <h1>Pavan Wavhal</h1>
+      <h3>And I'm a <span class="multiple-text"></span></h3>
+      <p>ServiceNow Developer| ITSM Automation Expert
+        Skilled in scripting, Flow Designer & integrations
+        Building smarter workflows, one script at a time 💻.</p>
+      <div class="social-media">
+        <a href="https://github.com/pavanwavhal01"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/pavan__wavhal/?locale=undefined"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://www.linkedin.com/in/pavan-wavhal-6547b9213?"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.facebook.com/share/1G2YtLGsEe/?mibextid=qi2Omg"><i class='bx bxl-facebook'></i></a>
+      </div>
+      <a href="https://drive.google.com/file/d/14HtT6xnjglVDL8R2J3kYoT572KUsiOMn/view" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="images/Adobe Express - file - Copy.png" alt="">
+    </div>
+  </section>
+
+  <!-- about section design -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/Style1-removebg-preview.png" alt="">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>ServiceNow Developer!</h3>
+      <p>I am a ServiceNow Developer and currently pursuing my MCA from Zeal Institute of Business Administration,
+        Computer Application & Research Pune.
+        I have also worked on several projects, including a Clothing Management System, and a Zomato clone using
+        the MERN stack.
+        I am passionate about learning new technologies and improving my coding skills. In my free time, I enjoy
+        watching technical videos and playing cricket.
+        I am excited to apply my skills in a professional environment and contribute to impactful projects.</p>
+      <!-- <a href="#" class="btn">Read More</a> -->
+    </div>
+  </section>
+
+  <!-- services section design -->
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container">
+      
+      <div class="services-box">
+        <i class='bx bx-rocket'></i>
+        <h3>ServiceNow Development</h3>
+        <p>I offer end-to-end ServiceNow development services focused on automating IT workflows and enhancing service delivery.
+          With hands-on experience in ITSM, Flow Designer, Business Rules, Script Includes, and IntegrationHub,</p>
+          <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+        
+        <div class="services-box">
+          <i class='bx bx-paint'></i>
+          <h3>Frontend Development</h3>
+          <p>I specialize in building dynamic and responsive user interfaces using modern frameworks like React and
+            Angular.
+            My focus is on creating seamless and engaging experiences that enhance usability and performance.</p>
+          <!-- <a href="#" class="btn">Read More</a> -->
+           
+        </div>
+        <div class="services-box">
+        <i class='bx bx-layer'></i>
+        <h3>Custom App Development</h3>
+        <p>I specialize in developing custom applications on the ServiceNow platform tailored to 
+          meet specific business needs. From designing scoped applications to implementing backend 
+          logic using Glide scripting.</p>
+        <!-- <a href="#" class="btn">Read More</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- portfolio section design -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="images/portfolio1.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Online Food Delivery </h4>
+          <p>Used Technology<br>Using MongoDB for your database and ReactJS for your frontend </p>
+          <a href="https://github.com/pavanwavhal01/Food_Delivery_Website-main"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+     
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
+
+  <form id="contact-form">
+    <div class="input-box">
+      <input type="text" id="fullName" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+      <input type="number" id="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}">
+    </div>
+    <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+<!-- ✅ Load EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- ✅ Contact Form Submission Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    emailjs.init("dVAw-bewJouOWeEC9");
+
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // ✅ Send form data using EmailJS
+      emailjs.send("service_pzsxywm", "template_dmckhyq", {
+
+        from_name: document.getElementById("fullName").value,
+        email:document.getElementById("email").value,
+        reply_to: document.getElementById("email").value,
+        mobile: document.getElementById("mobile").value,
+        message: document.getElementById("message").value,
+      })
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        this.reset();
+      })
+      .catch((error) => {
+        console.error("❌ EmailJS Error:", error);
+        alert("❌ Failed to send message. Please try again.");
+      });
+    });
+  });
+</script>
+
+
+
+
+
+  <!-- footer design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <!-- <p>Copyright © 2025 by pavan | All Rights Reserved.</p> -->
+      <p>&copy; 2025  | Stay Creative, Keep Coding❤️</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
